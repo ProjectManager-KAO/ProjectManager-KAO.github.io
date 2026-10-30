@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aleksei Klochko · Project / Delivery Manager</title>
+<meta name="description" content="Aleksei Klochko, Project / Delivery Manager. 13 years in government IT and international B2G contracts. Belgrade, open to remote roles in EMEA.">
+<meta name="author" content="Aleksei Klochko">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Aleksei Klochko · Project / Delivery Manager">
+<meta property="og:description" content="13 years delivering government IT and €70M+ in international contracts. Open to remote roles in EMEA.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:url" content="https://projectmanager-kao.github.io/">
+<meta property="og:image" content="https://projectmanager-kao.github.io/images/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Aleksei Klochko, Project / Delivery Manager">
+<meta property="profile:first_name" content="Aleksei">
+<meta property="profile:last_name" content="Klochko">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://projectmanager-kao.github.io/images/og-cover.jpg">
+<link rel="canonical" href="https://projectmanager-kao.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0F3CAD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,700;1,800&display=swap">
+<style>
+/* Layout: a cobalt poster on top, then one airy column of sections. */
+:root{
+  --cobalt:#0F3CAD; --sky:#CFE6FF; --frame:#FFFFFF;
+  --bg:#F3F6FB; --surface:#FFFFFF; --ink:#0B1430; --muted:#4B587A; --line:#D5DDEB; --accent:#0F3CAD; --on-accent:#FFFFFF;
+  --font:"Inter Tight", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --gap:clamp(56px, 9vw, 112px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B1430; --surface:#111D42; --ink:#E8F1FF; --muted:#A3B4D6; --line:#25335E; --accent:#8FB0FF; --on-accent:#0B1430; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B1430; --surface:#111D42; --ink:#E8F1FF; --muted:#A3B4D6; --line:#25335E; --accent:#8FB0FF; --on-accent:#0B1430; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.1;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.poster :focus-visible{outline-color:var(--frame)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.site[data-lang="en"] [lang="ru"], .site[data-lang="ru"] [lang="en"]{display:none !important}
+.skip{position:absolute;left:12px;top:-60px;background:var(--frame);color:var(--cobalt);padding:10px 16px;border-radius:8px;z-index:20}
+.skip:focus{top:12px}
+
+/* ---------- Poster ---------- */
+.poster{background:var(--cobalt);color:var(--sky)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+.mono{font-weight:700;font-style:italic;font-size:18px;letter-spacing:-.01em;text-decoration:none;color:var(--frame)}
+.nav-r{display:flex;align-items:center;gap:28px}
+.links{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:15px}
+.links a{text-decoration:none;opacity:.85}
+.links a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.lang{display:inline-flex;border:1px solid rgba(207,230,255,.55);border-radius:999px;padding:3px}
+.lang button{all:unset;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:.06em;padding:6px 12px;border-radius:999px;color:var(--sky)}
+.lang button[aria-pressed="true"]{background:var(--sky);color:var(--cobalt)}
+.lang button:focus-visible{outline:2px solid var(--frame);outline-offset:2px}
+@media (max-width:820px){.links{display:none}}
+
+.hero{padding-block:clamp(32px,6vw,72px) clamp(56px,8vw,104px)}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;border:1px solid rgba(207,230,255,.55);border-radius:999px;padding:6px 16px 6px 12px}
+.status i{width:8px;height:8px;border-radius:50%;background:#7CF0B5;box-shadow:0 0 0 4px rgba(124,240,181,.18)}
+.name{font-weight:800;font-style:italic;font-size:clamp(58px,12vw,168px);line-height:.9;letter-spacing:-.035em;color:var(--frame);margin-top:28px}
+.hero-row{display:grid;grid-template-columns:1.2fr 1fr;gap:32px 48px;align-items:end;margin-top:36px}
+.hero-row > *{min-width:0}
+.role{font-size:clamp(22px,2.6vw,30px);font-weight:600;color:var(--frame);letter-spacing:-.01em}
+.value{font-size:clamp(17px,1.6vw,19px);margin-top:12px;max-width:46ch}
+.meta{font-size:15px;display:grid;gap:6px;justify-self:end;text-align:right}
+.meta span{display:inline-flex;align-items:center;gap:8px;justify-content:flex-end}
+.meta svg{width:16px;height:16px;flex:none}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--font);text-decoration:none;cursor:pointer;border:1px solid var(--frame);transition:background .2s,color .2s}
+.btn svg{width:18px;height:18px}
+.btn-solid{background:var(--frame);color:var(--cobalt)}
+.btn-solid:hover{background:var(--sky)}
+.btn-ghost{background:transparent;color:var(--frame)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.note{font-size:14px;margin-top:10px;min-height:1.4em}
+@media (max-width:820px){
+  .hero-row{grid-template-columns:1fr}
+  .meta{justify-self:start;text-align:left}
+  .meta span{justify-content:flex-start}
+}
+
+
+/* ---------- Stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(40px,6vw,72px);border-top:2px solid var(--ink)}
+.stat{padding:24px 24px 0 0;min-width:0}
+.stat + .stat{padding-left:24px;border-left:1px solid var(--line)}
+.num{font-weight:700;font-size:clamp(40px,5vw,60px);line-height:1;letter-spacing:-.03em;color:var(--accent);font-variant-numeric:tabular-nums}
+.stat p{font-size:15px;color:var(--muted);margin-top:10px;max-width:24ch}
+@media (max-width:760px){
+  .stats{grid-template-columns:1fr 1fr;row-gap:28px}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+}
+
+/* ---------- Sections ---------- */
+section.block{padding-top:var(--gap)}
+.head{display:grid;grid-template-columns:220px 1fr;gap:24px 48px;align-items:baseline;margin-bottom:36px}
+.head > *{min-width:0}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h2{font-size:clamp(32px,4.4vw,52px);font-weight:700;letter-spacing:-.025em}
+.body-col{margin-left:calc(220px + 48px)}
+@media (max-width:820px){.head{grid-template-columns:1fr;gap:10px;margin-bottom:28px}.body-col{margin-left:0}}
+
+.about{display:grid;gap:16px;font-size:clamp(18px,1.9vw,21px);line-height:1.55;max-width:62ch}
+.about strong{font-weight:600}
+
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;min-width:0}
+.skill-h{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.ico{width:40px;height:40px;border-radius:12px;background:var(--cobalt);color:var(--sky);display:grid;place-items:center;flex:none}
+.ico svg{width:20px;height:20px}
+.skill h3{font-size:20px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:15px}
+.langs{display:flex;flex-wrap:wrap;gap:10px 32px;margin-top:24px;font-size:16px}
+.langs b{font-weight:600}
+.langs .m{color:var(--muted)}
+@media (max-width:760px){.skills{grid-template-columns:1fr}.skill{padding:22px}}
+
+.tl{list-style:none;margin-block:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:2px;background:var(--line)}
+.tl > li{position:relative;padding:0 0 48px 44px}
+.tl > li:last-child{padding-bottom:0}
+.tl > li::before{content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.tl > li.now::before{background:var(--accent)}
+.when{font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.02em}
+.tl h3{font-size:clamp(20px,2.2vw,24px);font-weight:600;margin-top:6px;letter-spacing:-.01em}
+.org{color:var(--muted);font-size:15px;margin-top:4px}
+.wins{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px;max-width:70ch}
+.wins li{position:relative;padding-left:20px}
+.wins li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:2px;background:var(--accent)}
+.wins b{font-weight:600}
+
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;min-width:0}
+.card .tag{font-size:14px;color:var(--muted)}
+.card h3{font-size:24px;font-weight:700;letter-spacing:-.015em;margin:6px 0 16px}
+.res{background:var(--cobalt);color:var(--sky);border-radius:16px;padding:16px 18px;margin-bottom:18px}
+.res .lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+.res p{color:#FFFFFF;font-weight:600;font-size:18px;line-height:1.35;margin-top:4px}
+.card dl{margin:0;display:grid;gap:12px;flex:1;align-content:start}
+.card dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.card dd{margin:2px 0 0}
+.card .lnk{margin-top:18px;font-size:15px;color:var(--muted);display:inline-flex;align-items:center;gap:8px}
+.card .lnk svg{width:16px;height:16px}
+@media (max-width:760px){.cards{grid-template-columns:1fr}.card{padding:22px}}
+
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px 32px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.facts > div{min-width:0}
+.fh{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:15px;color:var(--muted)}
+.facts.edu{grid-template-columns:repeat(2,1fr);margin-top:0;padding-top:0;border-top:0}
+.facts.edu ul{font-size:16px;color:var(--ink)}
+@media (max-width:760px){.facts,.facts.edu{grid-template-columns:1fr}}
+.ctx{font-size:15px;color:var(--muted);margin-top:10px;max-width:70ch}
+.sub{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:18px}
+.sub + .wins,.sub + .duty{margin-top:8px}
+.duty{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px;max-width:70ch;font-size:15px;color:var(--muted)}
+.duty li{position:relative;padding-left:20px}
+.duty li::before{content:"";position:absolute;left:2px;top:.68em;width:5px;height:5px;border-radius:50%;background:var(--line)}
+.duty b{color:var(--ink);font-weight:600}
+
+
+.scope{margin-top:18px;max-width:70ch}
+.scope summary{list-style:none;display:inline-flex;align-items:center;gap:10px;cursor:pointer;min-height:40px;padding:6px 16px 6px 6px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:14px;font-weight:600;user-select:none;transition:border-color .2s}
+.scope summary::-webkit-details-marker{display:none}
+.scope summary:hover{border-color:var(--accent)}
+.sc-ico{width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;flex:none}
+.sc-ico svg{width:14px;height:14px;transition:transform .25s}
+.scope[open] .sc-ico svg{transform:rotate(45deg)}
+.sc-l{letter-spacing:.02em}
+.sc-h{color:var(--muted);font-weight:500}
+.sc-h::before{content:"·";margin-right:8px}
+.scope .sc-o,.scope[open] .sc-c{display:none}
+.scope[open] .sc-o{display:inline}
+.scope .duty{margin-top:14px}
+.scope[open] .duty{animation:scIn .3s ease}
+@keyframes scIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.scope[open] .duty{animation:none}.sc-ico svg{transition:none}}
+
+/* ---------- Contact ---------- */
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.cl{display:flex;align-items:center;gap:18px;min-height:96px;padding:20px 24px;border-radius:22px;border:1px solid var(--line);background:var(--surface);text-decoration:none;min-width:0;transition:border-color .2s, transform .2s}
+.cl:hover{border-color:var(--accent);transform:translateY(-2px)}
+.cl .ico{width:48px;height:48px;border-radius:50%}
+.cl .t{display:grid;min-width:0}
+.cl .k{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.cl .v{font-size:clamp(17px,1.8vw,20px);font-weight:600;overflow-wrap:anywhere}
+.cl.main{background:var(--cobalt);border-color:var(--cobalt);color:#FFFFFF}
+.cl.main .k{color:var(--sky)}
+.cl.main .ico{background:var(--frame);color:var(--cobalt)}
+.email-row{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:20px 24px;border-radius:22px;border:1px dashed var(--line)}
+.email-row code{font:600 clamp(18px,2vw,22px)/1.2 var(--font);overflow-wrap:anywhere;user-select:all;flex:1;min-width:0}
+.copy{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;border:0;background:var(--accent);color:var(--on-accent);font:600 15px/1 var(--font);cursor:pointer}
+.copy svg{width:16px;height:16px}
+@media (max-width:760px){.contact{grid-template-columns:1fr}}
+
+footer{margin-top:var(--gap);border-top:1px solid var(--line);padding-block:28px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted)}
+
+/* ---------- Motion ---------- */
+.js .rv{transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.wait{opacity:0;transform:translateY(18px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{transition:none}.js .rv.wait{opacity:1;transform:none}.btn,.cl{transition:none}}
+</style>
+</head>
+<body>
+<div class="site" id="site" data-lang="en">
+<a class="skip" href="#main"><span lang="en">Skip to content</span><span lang="ru">К содержанию</span></a>
+
+<header class="poster">
+  <div class="wrap">
+    <div class="nav">
+      <a class="mono" href="#top">A.K.</a>
+      <div class="nav-r">
+        <nav aria-label="Sections"><ul class="links">
+          <li><a href="#about"><span lang="en">About</span><span lang="ru">Обо мне</span></a></li>
+          <li><a href="#experience"><span lang="en">Experience</span><span lang="ru">Опыт</span></a></li>
+          <li><a href="#skills"><span lang="en">Skills</span><span lang="ru">Навыки</span></a></li>
+          <li><a href="#projects"><span lang="en">Projects</span><span lang="ru">Проекты</span></a></li>
+          <li><a href="#education"><span lang="en">Education</span><span lang="ru">Образование</span></a></li>
+          <li><a href="#contact"><span lang="en">Contact</span><span lang="ru">Контакты</span></a></li>
+        </ul></nav>
+        <div class="lang" role="group" aria-label="Language / Язык">
+          <button type="button" data-set="en" aria-pressed="true">EN</button>
+          <button type="button" data-set="ru" aria-pressed="false">RU</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero" id="top">
+      <span class="status"><i aria-hidden="true"></i><span lang="en">Open to offers</span><span lang="ru">Открыт к предложениям</span></span>
+      <h1 class="name"><span lang="en">Aleksei<br>Klochko</span><span lang="ru">Алексей<br>Клочко</span></h1>
+      <div class="hero-row">
+        <div>
+          <p class="role">Project / Delivery Manager</p>
+          <p class="value">
+            <span lang="en">I run multi-vendor IT programmes for government and B2G clients, from requirements to sign-off.</span>
+            <span lang="ru">Веду IT-проекты для госсектора и B2G-клиентов с несколькими подрядчиками: от требований до приёмки.</span>
+          </p>
+          <div class="btns">
+            <a class="btn btn-solid" href="#contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>
+              <span lang="en">Contact me</span><span lang="ru">Связаться</span></a>
+            <a class="btn btn-ghost" id="cv" href="CV_Aleksei_Klochko.pdf" download="CV_Aleksei_Klochko.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+              <span lang="en">Download CV (PDF)</span><span lang="ru">Скачать резюме (PDF)</span></a>
+          </div>
+          <p class="note" id="cv-note" aria-live="polite"></p>
+        </div>
+        <div class="meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span lang="en">Belgrade, Serbia</span><span lang="ru">Белград, Сербия</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg><span lang="en">Remote, EMEA time zones</span><span lang="ru">Удалённо, часовые пояса EMEA</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 6h10M9 4v2c0 4-2.5 7-5 8M6 10c1 2.5 3.5 4.5 6 5M13 20l4-9 4 9M14.5 17h5"/></svg><span lang="en">Russian native · English B2</span><span lang="ru">Русский родной · английский B2</span></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <div class="stats rv" role="list">
+    <div class="stat" role="listitem"><div class="num">13</div><p><span lang="en">years in project and contract management</span><span lang="ru">лет в управлении проектами и заказами</span></p></div>
+    <div class="stat" role="listitem"><div class="num">3</div><p><span lang="en">government IT products for the Ministry of Finance, zero revision cycles</span><span lang="ru">госпродукта для Минфина, приняты без доработок</span></p></div>
+    <div class="stat" role="listitem"><div class="num">€70M+</div><p><span lang="en">export contracts across 11 countries</span><span lang="ru">экспортных контрактов в 11 странах</span></p></div>
+    <div class="stat" role="listitem"><div class="num">2×</div><p><span lang="en">faster than contractual SLAs</span><span lang="ru">быстрее договорных SLA</span></p></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="block" id="about" aria-labelledby="h-about">
+    <div class="head rv"><p class="kicker"><span lang="en">About</span><span lang="ru">Обо мне</span></p>
+      <h2 id="h-about"><span lang="en">Complex delivery, one point of contact</span><span lang="ru">Сложные проекты, одна точка контакта</span></h2></div>
+    <div class="body-col">
+      <div class="about rv">
+        <p lang="en">I am a project and delivery manager with <strong>13 years</strong> of experience. I run complex, multi-stakeholder programmes in two demanding environments: national government IT systems and international B2G export deals.</p>
+        <p lang="en">I deliver end to end through external vendors. I own requirements, contracts, schedule, acceptance and escalations.</p>
+        <p lang="en">I act as the single point of contact between a demanding client and the team that has to deliver.</p>
+        <p lang="en">I work in English with client executives, including central bank and ministry leadership.</p>
+        <p lang="ru">Я руководитель проектов и поставок с опытом <strong>13 лет</strong>. Веду сложные проекты с множеством участников в двух требовательных средах: государственные IT-системы и международные B2G-контракты.</p>
+        <p lang="ru">Работаю через внешних подрядчиков от начала до конца. Отвечаю за требования, договоры, график, приёмку и эскалации.</p>
+        <p lang="ru">Выступаю единой точкой контакта между требовательным заказчиком и командой исполнителей.</p>
+        <p lang="ru">Работаю на английском с руководством заказчиков, включая центробанки и министерства.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="block" id="experience" aria-labelledby="h-exp">
+    <div class="head rv"><p class="kicker"><span lang="en">Experience</span><span lang="ru">Опыт</span></p>
+      <h2 id="h-exp"><span lang="en">Professional experience</span><span lang="ru">Опыт работы</span></h2></div>
+    <ol class="tl body-col">
+      <li class="rv now">
+        <p class="when"><span lang="en">Aug 2025 – Oct 2026</span><span lang="ru">Авг 2025 – окт 2026</span></p>
+        <h3><span lang="en">Acting Head of Department, Enablement and Competence Development</span><span lang="ru">И. о. руководителя отдела обучения и развития компетенций</span></h3>
+        <p class="org"><span lang="en">Goznak, IT Centre “Gosfinansy”, Moscow</span><span lang="ru">Гознак, ЦИТ «Госфинансы», Москва</span></p>
+        <p class="ctx"><span lang="en">Goznak’s IT arm. Develops and supports “Electronic Budget”, the national public finance platform used by all federal ministries and agencies (500,000+ users). Client: the Ministry of Finance.</span><span lang="ru">IT-подразделение Гознака. Развивает и сопровождает «Электронный бюджет», платформу госфинансов для всех федеральных министерств и ведомств (500 000+ пользователей). Заказчик: Минфин России.</span></p>
+        <p class="sub"><span lang="en">Key achievements</span><span lang="ru">Ключевые результаты</span></p>
+        <ul class="wins" lang="en">
+          <li><b>Saved ~RUB 10M ($120k) in six months</b> by moving training content production from a RUB 27M ($324k) vendor contract to an in-house team, at the same volume of work.</li>
+          <li><b>Delivered 61 training assets year to date</b> for new platform releases; the learning portal reached 40,000 unique users and 92,000 course views.</li>
+          <li><b>Beat contractual SLAs by ~2×:</b> 2.5 days for updates vs 5, and 5 days for new materials vs 10.</li>
+          <li><b>Presented the unit’s annual results</b> to an internal audience of ~200 people.</li>
+        </ul>
+        <ul class="wins" lang="ru">
+          <li><b>Сэкономил ~10 млн ₽ за полгода:</b> перевёл выпуск обучающего контента от подрядчика (контракт 27 млн ₽) в свою команду при том же объёме работ.</li>
+          <li><b>Выпустил 61 обучающий материал</b> с начала года для новых релизов; портал набрал 40 000 уникальных пользователей и 92 000 просмотров курсов.</li>
+          <li><b>Опередил договорные SLA примерно вдвое:</b> 2,5 дня на обновление вместо 5, 5 дней на новый материал вместо 10.</li>
+          <li><b>Представил годовые итоги отдела</b> аудитории около 200 человек.</li>
+        </ul>
+        <details class="scope">
+          <summary><span class="sc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span><span class="sc-l"><span lang="en">Scope</span><span lang="ru">Зона ответственности</span></span><span class="sc-h"><span class="sc-c"><span lang="en">Show details</span><span lang="ru">Показать</span></span><span class="sc-o"><span lang="en">Hide</span><span lang="ru">Скрыть</span></span></span></summary>
+        <ul class="duty" lang="en">
+          <li>Led a unit of 3 across three streams: user enablement content, university and internship partnerships, continuing professional education. Reported to the branch director and the advisor to the CEO.</li>
+          <li>Owned the content pipeline end to end: intake of requests, turning 300-page manuals into step-by-step guides, quality control, delivery against SLAs.</li>
+          <li>Closed government contract stages; prepared management reporting, status briefings and executive presentations.</li>
+          <li>Delivered masterclasses on the platform, business analysis and BPMN for students and interns.</li>
+        </ul>
+        <ul class="duty" lang="ru">
+          <li>Руководил отделом из 3 человек по трём направлениям: обучающий контент, партнёрства с вузами и стажировки, дополнительное профобразование. Подчинялся директору филиала и советнику гендиректора.</li>
+          <li>Отвечал за весь цикл контента: приём заявок, превращение 300-страничных руководств в пошаговые инструкции, контроль качества, сдачу в сроки SLA.</li>
+          <li>Закрывал этапы госконтрактов, готовил управленческую отчётность, статусы и презентации для руководства.</li>
+          <li>Проводил мастер-классы по платформе, бизнес-анализу и BPMN для студентов и стажёров.</li>
+        </ul>
+        </details>
+      </li>
+      <li class="rv">
+        <p class="when"><span lang="en">Feb 2024 – Aug 2025</span><span lang="ru">Фев 2024 – авг 2025</span></p>
+        <h3><span lang="en">Lead Business Analyst / Project Manager</span><span lang="ru">Ведущий бизнес-аналитик / руководитель проектов</span></h3>
+        <p class="org"><span lang="en">Goznak, IT Centre “Gosfinansy”, Moscow · client: Ministry of Finance</span><span lang="ru">Гознак, ЦИТ «Госфинансы», Москва · заказчик: Минфин России</span></p>
+        <p class="sub"><span lang="en">Key achievements</span><span lang="ru">Ключевые результаты</span></p>
+        <ul class="wins" lang="en">
+          <li><b>Delivered two analytics modules</b> over the capital investment and public debt subsystems: 9-month Waterfall cycle, 10-person vendor team. They now serve ~200 and ~50 users.</li>
+          <li><b>Delivered MF-Monitoring</b>, the Ministry’s milestone-tracking system used by project offices and the Minister of Finance: 10-month cycle, 5-person vendor team, up to 150 users. Defended the design with the Director of the IT Department.</li>
+          <li><b>Formally recognised</b> by the Director of the Ministry’s IT Department (2024) and by the Director of the Centre (2025).</li>
+        </ul>
+        <ul class="wins" lang="ru">
+          <li><b>Сдал два аналитических модуля</b> по подсистемам капвложений и госдолга: 9 месяцев, Waterfall, подрядчик из 10 человек. Ими пользуются ~200 и ~50 человек.</li>
+          <li><b>Сдал MF-Monitoring</b>, систему контроля вех Минфина для проектных офисов и министра: 10 месяцев, команда из 5 человек, до 150 пользователей. Защитил решение у директора ИТ-департамента.</li>
+          <li><b>Получил благодарности</b> директора ИТ-департамента Минфина (2024) и директора Центра (2025).</li>
+        </ul>
+        <details class="scope">
+          <summary><span class="sc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span><span class="sc-l"><span lang="en">Scope</span><span lang="ru">Зона ответственности</span></span><span class="sc-h"><span class="sc-c"><span lang="en">Show details</span><span lang="ru">Показать</span></span><span class="sc-o"><span lang="en">Hide</span><span lang="ru">Скрыть</span></span></span></summary>
+        <ul class="duty" lang="en">
+          <li>Delivery lead and single point of contact between the government client and subcontractor teams.</li>
+          <li>Gathered requirements, analysed legacy systems, rewrote technical specifications with vendor analysts, validated delivered functionality.</li>
+          <li>Ran vendor check-ins, managed escalations and client expectations, mediated scope and timelines; reported to client directors and internal management.</li>
+        </ul>
+        <ul class="duty" lang="ru">
+          <li>Руководил поставкой, был единой точкой контакта между госзаказчиком и командами подрядчиков.</li>
+          <li>Собирал требования, анализировал legacy-системы, переписывал ТЗ с аналитиками подрядчика, принимал функциональность.</li>
+          <li>Проводил встречи с подрядчиком, вёл эскалации и ожидания заказчика, согласовывал объём и сроки; отчитывался директорам департаментов и руководству.</li>
+        </ul>
+        </details>
+      </li>
+      <li class="rv">
+        <p class="when"><span lang="en">Jul 2017 – Jan 2024</span><span lang="ru">Июл 2017 – янв 2024</span></p>
+        <h3><span lang="en">Senior Specialist, Export Directorate</span><span lang="ru">Старший специалист, экспортная дирекция</span></h3>
+        <p class="org"><span lang="en">Goznak, Moscow</span><span lang="ru">Гознак, Москва</span></p>
+        <p class="sub"><span lang="en">Key achievements</span><span lang="ru">Ключевые результаты</span></p>
+        <ul class="wins" lang="en">
+          <li><b>Managed €70M+ in export contracts across 11 countries</b> in Africa and the Middle East, including Zambia, Namibia and tenders in South Africa; up to 3 live contracts in parallel with new bids.</li>
+          <li><b>Zero missed delivery deadlines in 6.5 years.</b> Shortest tender-to-delivery cycle: 3 months.</li>
+          <li><b>Won ~50% of 20+ international tenders</b> for central banks, interior ministries and state printing works.</li>
+          <li><b>Closed a quality incident in two weeks:</b> ran the on-site inspection, found the root cause, secured a full replacement at company cost and moved production to another plant.</li>
+        </ul>
+        <ul class="wins" lang="ru">
+          <li><b>Вёл экспортные контракты на €70M+ в 11 странах</b> Африки и Ближнего Востока, включая Замбию, Намибию и тендеры в ЮАР; до 3 контрактов параллельно с новыми заявками.</li>
+          <li><b>Ни одного сорванного срока поставки за 6,5 года.</b> Самый короткий цикл от тендера до поставки: 3 месяца.</li>
+          <li><b>Выиграл ~50% из 20+ международных тендеров</b> для центробанков, МВД и госпечатных фабрик.</li>
+          <li><b>Закрыл рекламацию за две недели:</b> провёл инспекцию на месте, нашёл причину, добился полной замены за счёт компании и перенёс производство на другую фабрику.</li>
+        </ul>
+        <details class="scope">
+          <summary><span class="sc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span><span class="sc-l"><span lang="en">Scope</span><span lang="ru">Зона ответственности</span></span><span class="sc-h"><span class="sc-c"><span lang="en">Show details</span><span lang="ru">Показать</span></span><span class="sc-o"><span lang="en">Hide</span><span lang="ru">Скрыть</span></span></span></summary>
+        <ul class="duty" lang="en">
+          <li>Owned the full export cycle: tender screening with regional agents, bids, negotiation, contracting, production coordination and delivery.</li>
+          <li>Coordinated production across paper mills, printing works and mints; escalated to chief technologists and plant directors when timelines were at risk.</li>
+          <li>Negotiated in English with central banks, senior ministry officials and plant directors.</li>
+        </ul>
+        <ul class="duty" lang="ru">
+          <li>Вёл полный цикл экспорта: отбор тендеров с региональными агентами, заявки, переговоры, контракт, координация производства и поставка.</li>
+          <li>Координировал производство на бумажных фабриках, печатных фабриках и монетных дворах; эскалировал риски главным технологам и директорам фабрик.</li>
+          <li>Вёл переговоры на английском с центробанками, министерствами и директорами фабрик.</li>
+        </ul>
+        </details>
+      </li>
+      <li class="rv">
+        <p class="when"><span lang="en">Apr 2015 – Jul 2017</span><span lang="ru">Апр 2015 – июл 2017</span></p>
+        <h3><span lang="en">Contract Economist, Contracts Department</span><span lang="ru">Экономист договорного отдела</span></h3>
+        <p class="org"><span lang="en">Goznak, Saint Petersburg Paper Mill</span><span lang="ru">Гознак, Санкт-Петербургская бумажная фабрика</span></p>
+        <ul class="wins" lang="en">
+          <li><b>Processed 600+ contracts and amendments a year</b> for compliance with corporate policy and national legislation; maintained the contract register.</li>
+          <li><b>Checked ~40 tender packages in six months</b> with no findings from supervisory authorities.</li>
+        </ul>
+        <ul class="wins" lang="ru">
+          <li><b>Проверял 600+ договоров и допсоглашений в год</b> на соответствие политике компании и законодательству; вёл реестр договоров.</li>
+          <li><b>Проверил ~40 пакетов тендерной документации за полгода</b> без замечаний надзорных органов.</li>
+        </ul>
+      </li>
+      <li class="rv">
+        <p class="when">2013 – 2015</p>
+        <h3><span lang="en">Earlier career</span><span lang="ru">Ранее</span></h3>
+        <ul class="duty" lang="en">
+          <li><b>Lead Economist</b>, Vyborgskaya CHP Plant (TGC-1), Sep 2013 – Apr 2015: primary documentation, management reporting, payment control.</li>
+          <li><b>Economist</b>, VAM LLC, Feb – Jun 2013: budget and cash flow planning, bank reporting on credit facilities, contracts.</li>
+        </ul>
+        <ul class="duty" lang="ru">
+          <li><b>Ведущий экономист</b>, Выборгская ТЭЦ (ТГК-1), сен 2013 – апр 2015: первичная документация, управленческая отчётность, контроль платежей.</li>
+          <li><b>Экономист</b>, ООО «ВАМ», фев – июн 2013: бюджет и БДДС, отчётность для банков по кредитам, договоры.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="block" id="skills" aria-labelledby="h-skills">
+    <div class="head rv"><p class="kicker"><span lang="en">Skills</span><span lang="ru">Навыки</span></p>
+      <h2 id="h-skills"><span lang="en">What I bring</span><span lang="ru">Что я умею</span></h2></div>
+    <div class="body-col">
+      <div class="skills">
+        <article class="skill rv">
+          <div class="skill-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M7 14h4"/></svg></span>
+            <h3><span lang="en">Project &amp; Delivery Management</span><span lang="ru">Управление проектами и поставкой</span></h3></div>
+          <ul class="tags" lang="en"><li>Project Planning &amp; Coordination</li><li>Risk Management</li><li>Schedule Management</li><li>Budget Management</li><li>Stakeholder Management</li><li>Escalation Management</li></ul>
+          <ul class="tags" lang="ru"><li>Планирование и координация проектов</li><li>Управление рисками</li><li>Управление сроками</li><li>Управление бюджетом</li><li>Управление стейкхолдерами</li><li>Управление эскалациями</li></ul>
+        </article>
+        <article class="skill rv">
+          <div class="skill-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="6" rx="1.5"/><rect x="14" y="15" width="7" height="6" rx="1.5"/><path d="M6.5 9v4.5a1.5 1.5 0 0 0 1.5 1.5h6"/><circle cx="17.5" cy="6" r="3"/></svg></span>
+            <h3><span lang="en">Business Analysis &amp; Processes</span><span lang="ru">Бизнес-анализ и процессы</span></h3></div>
+          <ul class="tags" lang="en"><li>Requirements Gathering &amp; Analysis</li><li>Functional &amp; Technical Specifications</li><li>BPMN</li><li>Business Process Improvement</li><li>Legacy System Analysis</li><li>Reference Data Standards</li></ul>
+          <ul class="tags" lang="ru"><li>Сбор и анализ требований</li><li>Функциональные и технические требования (ФТ, ТЗ)</li><li>BPMN</li><li>Улучшение бизнес-процессов</li><li>Анализ legacy-систем</li><li>НСИ и стандарты именования</li></ul>
+        </article>
+        <article class="skill rv">
+          <div class="skill-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.9.2 5 2.6 5 5.8"/></svg></span>
+            <h3><span lang="en">Leadership &amp; Stakeholders</span><span lang="ru">Команда и стейкхолдеры</span></h3></div>
+          <ul class="tags" lang="en"><li>Cross-functional teams</li><li>Stakeholders up to C-level</li><li>International negotiations</li><li>Training &amp; enablement</li><li>Public speaking</li></ul>
+          <ul class="tags" lang="ru"><li>Кросс-функциональные команды</li><li>Стейкхолдеры до C-level</li><li>Международные переговоры</li><li>Обучение пользователей</li><li>Публичные выступления</li></ul>
+        </article>
+        <article class="skill rv">
+          <div class="skill-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L3.5 17.5l3 3 5.7-5.7a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.6-.4-.4-2.6 2.6-2.6Z"/></svg></span>
+            <h3><span lang="en">Tools</span><span lang="ru">Инструменты</span></h3></div>
+          <ul class="tags"><li>Jira</li><li>Eva Project</li><li>draw.io (BPMN)</li><li>Miro</li><li>Figma</li><li>PowerPoint</li><li>Excel</li><li>MS Dynamics AX</li><li>DocsVision</li><li><span lang="en">AI tools</span><span lang="ru">ИИ-инструменты</span></li></ul>
+        </article>
+      </div>
+      <div class="langs rv">
+        <span><b lang="en">Russian</b><b lang="ru">Русский</b> <span class="m" lang="en">native</span><span class="m" lang="ru">родной</span></span>
+        <span><b lang="en">English</b><b lang="ru">Английский</b> <span class="m" lang="en">B2, daily in negotiations and contracts</span><span class="m" lang="ru">B2, каждый день в переговорах и договорах</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="block" id="projects" aria-labelledby="h-proj">
+    <div class="head rv"><p class="kicker"><span lang="en">Projects</span><span lang="ru">Проекты</span></p>
+      <h2 id="h-proj"><span lang="en">Selected cases</span><span lang="ru">Избранные кейсы</span></h2></div>
+    <div class="cards body-col">
+      <article class="card rv">
+        <span class="tag"><span lang="en">2025 · Product proposal to the executive project committee</span><span lang="ru">2025 · продуктовое предложение проектному комитету</span></span>
+        <h3><span lang="en">“Goznak.Processes”</span><span lang="ru">«Гознак.Процессы»</span></h3>
+        <div class="res"><p class="lbl"><span lang="en">Result</span><span lang="ru">Результат</span></p>
+          <p><span lang="en">Presented to the executive board: the CEO, deputy CEOs and the R&amp;D institute director</span><span lang="ru">Представил правлению: гендиректору, его заместителям и директору НИИ</span></p></div>
+        <dl>
+          <div><dt><span lang="en">Product</span><span lang="ru">Продукт</span></dt><dd><span lang="en">SaaS production monitoring for mid-size serial manufacturers: Gantt of production and maintenance, dashboards, reporting, bottleneck highlighting, delay-risk alerts and an AI forecasting agent.</span><span lang="ru">SaaS для мониторинга производства на средних серийных предприятиях: диаграмма Ганта производства и ТО, дашборды, отчёты, подсветка узких мест, алерты о риске срыва и ИИ-агент для прогноза.</span></dd></div>
+          <div><dt><span lang="en">What I did</span><span lang="ru">Что я сделал</span></dt><dd><span lang="en">Owned the full business case: problem and target segments, 7P benchmark of 4 rivals, subscription model and a 13-month delivery roadmap.</span><span lang="ru">Подготовил весь бизнес-кейс: проблема и целевые сегменты, сравнение с 4 конкурентами по 7P, подписочная модель и роадмап на 13 месяцев.</span></dd></div>
+          <div><dt><span lang="en">Key figures</span><span lang="ru">Ключевые цифры</span></dt><dd><span lang="en">TAM RUB 85bn · SAM RUB 21bn · SOM RUB 850M · RUB 56M investment · 20% IRR · 6-year payback · NPV RUB 3.9M</span><span lang="ru">TAM 85 млрд ₽ · SAM 21 млрд ₽ · SOM 850 млн ₽ · инвестиции 56 млн ₽ · IRR 20% · окупаемость 6 лет · NPV 3,9 млн ₽</span></dd></div>
+        </dl>
+      </article>
+      <article class="card rv">
+        <span class="tag"><span lang="en">2023 · Yandex Practicum capstone</span><span lang="ru">2023 · выпускной проект Яндекс Практикума</span></span>
+        <h3><span lang="en">Cross-functional e-commerce product</span><span lang="ru">Кросс-функциональный e-commerce продукт</span></h3>
+        <div class="res"><p class="lbl"><span lang="en">Result</span><span lang="ru">Результат</span></p>
+          <p><span lang="en">Working site with catalogue, cart and checkout in two months; project defended</span><span lang="ru">Рабочий сайт с каталогом, корзиной и оформлением заказа за два месяца; проект защищён</span></p></div>
+        <dl>
+          <div><dt><span lang="en">Team</span><span lang="ru">Команда</span></dt><dd><span lang="en">Fully remote, 12 recent graduates with no prior working relationship and no compensation: 2 PMs, 2 designers, 4–5 backend and 4–5 frontend developers.</span><span lang="ru">Полностью удалённая команда из 12 выпускников без опыта совместной работы и без оплаты: 2 PM, 2 дизайнера, 4–5 бэкенд- и 4–5 фронтенд-разработчиков.</span></dd></div>
+          <div><dt><span lang="en">What I did</span><span lang="ru">Что я сделал</span></dt><dd><span lang="en">Built the design–frontend–backend process from scratch, managed ~130 Jira tasks with weekly ceremonies, resolved cross-role conflicts over dependencies.</span><span lang="ru">Выстроил процесс между дизайном, фронтендом и бэкендом с нуля, вёл ~130 задач в Jira и еженедельные встречи, решал конфликты по зависимостям.</span></dd></div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="block" id="education" aria-labelledby="h-edu">
+    <div class="head rv"><p class="kicker"><span lang="en">Education</span><span lang="ru">Образование</span></p>
+      <h2 id="h-edu"><span lang="en">Education and training</span><span lang="ru">Образование и обучение</span></h2></div>
+    <div class="facts edu body-col rv">
+        <div>
+          <p class="fh"><span lang="en">Degree</span><span lang="ru">Высшее образование</span></p>
+          <ul lang="en"><li>Saint Petersburg State University of Economics and Finance, Specialist degree in Economics and Management, 2013</li></ul>
+          <ul lang="ru"><li>СПбГУЭФ, специалитет «Экономика и управление» (менеджмент организации), 2013</li></ul>
+        </div>
+        <div>
+          <p class="fh"><span lang="en">Professional development</span><span lang="ru">Повышение квалификации</span></p>
+          <ul lang="en"><li>Foundational Management Skills, Goznak, 2026</li><li>Product Management, Goznak, 2025</li><li>Business Analysis, Edusson, 2024</li><li>Project Management, Yandex Practicum, 2023</li></ul>
+          <ul lang="ru"><li>Базовые управленческие навыки, Гознак, 2026</li><li>Управление продуктом, Гознак, 2025</li><li>Бизнес-анализ, Edusson, 2024</li><li>Управление проектами, Яндекс Практикум, 2023</li></ul>
+        </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block" id="contact" aria-labelledby="h-contact">
+    <div class="head rv"><p class="kicker"><span lang="en">Contact</span><span lang="ru">Контакты</span></p>
+      <h2 id="h-contact"><span lang="en">Contacts</span><span lang="ru">Контакты</span></h2></div>
+    <div class="contact body-col">
+      <a class="cl main rv" href="https://t.me/KlochkoAleksei" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 4 3 11l6 2.5M21 4l-3.5 16-8.5-6.5M21 4 9 13.5V19l3-3.3"/></svg></span>
+        <span class="t"><span class="k">Telegram</span><span class="v">@KlochkoAleksei</span></span></a>
+      <a class="cl rv" href="https://www.linkedin.com/in/aleksei-klochko-001ba0435" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M8 7.5v.01M12 16v-5.5M12 13c0-1.5 1-2.5 2.3-2.5S16.5 11.3 16.5 13v3"/></svg></span>
+        <span class="t"><span class="k">LinkedIn</span><span class="v">aleksei-klochko</span></span></a>
+      <a class="cl rv" href="mailto:aleksei.klochko@gmail.com">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></span>
+        <span class="t"><span class="k">Email</span><span class="v">aleksei.klochko@gmail.com</span></span></a>
+      <a class="cl rv" href="tel:+381638453897">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1Z"/></svg></span>
+        <span class="t"><span class="k"><span lang="en">Phone</span><span lang="ru">Телефон</span></span><span class="v">+381 63 845 38 97</span></span></a>
+      <div class="email-row rv">
+        <code id="email">aleksei.klochko@gmail.com</code>
+        <button class="copy" id="copy" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
+          <span id="copy-l"><span lang="en">Copy email</span><span lang="ru">Скопировать email</span></span></button>
+        <span class="sr" id="copy-live" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <footer><span>© 2026 Aleksei Klochko</span><span><span lang="en">Belgrade · remote</span><span lang="ru">Белград · удалённо</span></span></footer>
+</main>
+</div>
+
+<script>
+(function(){
+  var site=document.getElementById('site');
+  var T={
+    en:{title:'Aleksei Klochko',alt:'Portrait of Aleksei Klochko',copied:'Copied',dlNo:'Download is not available here. Write to me and I’ll send the PDF.',dlErr:'Download failed. Write to me and I’ll send the PDF.'},
+    ru:{title:'Алексей Клочко',alt:'Портрет Алексея Клочко',copied:'Скопировано',dlNo:'Скачивание здесь недоступно. Напишите мне, и я пришлю PDF.',dlErr:'Не получилось скачать. Напишите мне, и я пришлю PDF.'}
+  };
+  var lang='en';
+  function setLang(l){
+    lang=T[l]?l:'en';
+    site.dataset.lang=lang;
+    document.documentElement.lang=lang;
+    document.title=T[lang].title+' · Project / Delivery Manager';
+    document.querySelectorAll('[data-set]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===lang))});
+    try{localStorage.setItem('lang',lang)}catch(e){}
+  }
+  var saved=null; try{saved=localStorage.getItem('lang')}catch(e){}
+  setLang(saved || 'en');
+  document.querySelectorAll('[data-set]').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+
+  /* One-click email copy */
+  var copy=document.getElementById('copy'), live=document.getElementById('copy-live'), mail=document.getElementById('email'), label=document.getElementById('copy-l'), orig=label.innerHTML;
+  function selectMail(){var r=document.createRange();r.selectNodeContents(mail);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  copy.addEventListener('click',function(){
+    var ok=function(){label.textContent=T[lang].copied;live.textContent=T[lang].copied;setTimeout(function(){label.innerHTML=orig;live.textContent=''},1800)};
+    try{navigator.clipboard.writeText(mail.textContent.trim()).then(ok,selectMail)}catch(e){selectMail()}
+  });
+
+  /* Light scroll reveal; content is visible without JS */
+  if(!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  site.classList.add('js');
+  var vh=innerHeight;
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('wait');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){
+    if(el.getBoundingClientRect().top < vh*0.95) return;
+    el.classList.add('wait'); io.observe(el);
+  });
+})();
+</script>
+</body>
+</html>
