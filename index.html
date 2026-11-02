@@ -256,11 +256,7 @@ footer{margin-top:var(--gap);border-top:1px solid var(--line);padding-block:28px
             <a class="btn btn-solid" href="#contact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>
               <span lang="en">Contact me</span><span lang="ru">Связаться</span></a>
-            <a class="btn btn-ghost" id="cv" href="CV_Aleksei_Klochko.pdf" download="CV_Aleksei_Klochko.pdf">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
-              <span lang="en">Download CV (PDF)</span><span lang="ru">Скачать резюме (PDF)</span></a>
           </div>
-          <p class="note" id="cv-note" aria-live="polite"></p>
         </div>
         <div class="meta">
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span lang="en">Belgrade, Serbia</span><span lang="ru">Белград, Сербия</span></span>
@@ -545,13 +541,11 @@ footer{margin-top:var(--gap);border-top:1px solid var(--line);padding-block:28px
 (function(){
   var site=document.getElementById('site');
   var T={
-    en:{title:'Aleksei Klochko',alt:'Portrait of Aleksei Klochko',copied:'Copied',dlNo:'Download is not available here. Write to me and I’ll send the PDF.',dlErr:'Download failed. Write to me and I’ll send the PDF.'},
-    ru:{title:'Алексей Клочко',alt:'Портрет Алексея Клочко',copied:'Скопировано',dlNo:'Скачивание здесь недоступно. Напишите мне, и я пришлю PDF.',dlErr:'Не получилось скачать. Напишите мне, и я пришлю PDF.'}
+    en:{title:'Aleksei Klochko',alt:'Portrait of Aleksei Klochko',copied:'Copied'},
+    ru:{title:'Алексей Клочко',alt:'Портрет Алексея Клочко',copied:'Скопировано'}
   };
   var lang='en';
   function setLang(l){
-    var cvl=document.getElementById('cv'), cvf=(l==='ru')?'CV_Aleksei_Klochko_RU.pdf':'CV_Aleksei_Klochko.pdf';
-    cvl.setAttribute('href',cvf); cvl.setAttribute('download',cvf);
     lang=T[l]?l:'en';
     site.dataset.lang=lang;
     document.documentElement.lang=lang;
@@ -569,19 +563,6 @@ footer{margin-top:var(--gap);border-top:1px solid var(--line);padding-block:28px
   copy.addEventListener('click',function(){
     var ok=function(){label.textContent=T[lang].copied;live.textContent=T[lang].copied;setTimeout(function(){label.innerHTML=orig;live.textContent=''},1800)};
     try{navigator.clipboard.writeText(mail.textContent.trim()).then(ok,selectMail)}catch(e){selectMail()}
-  });
-
-  /* CV inside the Claude viewer: plain links cannot download there */
-  var cv=document.getElementById('cv'), note=document.getElementById('cv-note');
-  cv.addEventListener('click',async function(e){
-    if(!(window.claude && typeof window.claude.use==='function')) return;
-    e.preventDefault();
-    try{
-      var dl=await window.claude.use('downloads');
-      if(!dl){note.textContent=T[lang].dlNo;return}
-      var blob=await (await fetch(cv.getAttribute('href'))).blob();
-      await dl.save({filename:cv.getAttribute('download'),data:blob});
-    }catch(err){ if(!(err&&err.code==='declined')) note.textContent=T[lang].dlErr; }
   });
 
   /* Light scroll reveal; content is visible without JS */
